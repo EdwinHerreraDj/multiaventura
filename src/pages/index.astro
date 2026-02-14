@@ -1,0 +1,462 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { routes } from "../config/routes";
+---
+
+<Layout title="Inicio" description="Bienvenido a Multiaventura">
+    <section class="banner-section centred">
+        <div
+            class="pattern-layer"
+            style="background-image: url(assets/images/shape/shape-1.png);"
+        >
+        </div>
+
+        <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
+            <!-- SLIDE 1 -->
+            <div class="slide-item">
+                <div
+                    class="image-layer"
+                    style="background-image:url(assets/images/banner/banner-1.jpg)"
+                >
+                </div>
+
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div
+                            class="shape"
+                            style="background-image: url(assets/images/shape/shape-2.png);"
+                        >
+                        </div>
+
+                        <span>Multiaventura en Granada</span>
+
+                        <h2>Experiencias reales</h2>
+
+                        <div class="btn-box">
+                            <a
+                                href={routes.servicios}
+                                class="theme-btn btn-one"
+                            >
+                                Ver actividades
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="slide-item style-two">
+                <div
+                    class="image-layer"
+                    style="background-image:url(assets/images/banner/banner-2.jpg)"
+                >
+                </div>
+
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div
+                            class="shape"
+                            style="background-image: url(assets/images/shape/shape-2.png);"
+                        >
+                        </div>
+
+                        <span>Aventura al maximo</span>
+
+                        <h2>Momentos inolvidables</h2>
+
+                        <div class="btn-box">
+                            <a href={routes.contacto} class="theme-btn btn-one">
+                                Reservar ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="media-partner">
+            <ul class="media-links clearfix">
+                <li><h6>Síguenos</h6></li>
+
+                <li>
+                    <a href={routes.blog}>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href={routes.blog}>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-section bg-color-1">
+        <div
+            class="pattern-layer"
+            style="background-image: url(assets/images/shape/shape-4.png);"
+        >
+        </div>
+
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!-- IMAGEN -->
+                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                    <div class="image_block_one">
+                        <div class="image-box">
+                            <!-- quité ese "amping" porque parece error -->
+                            <div
+                                class="shape"
+                                style="background-image: url(assets/images/shape/shape-3.png);"
+                            >
+                            </div>
+
+                            <figure class="image">
+                                <img
+                                    src="assets/images/resource/about-1.jpg"
+                                    alt="Empresa de multiaventura en Granada"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEXTO -->
+                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                    <div class="content_block_one">
+                        <div class="content-box">
+                            <div class="sec-title">
+                                <span class="sub-title">Quiénes somos</span>
+
+                                <h2>
+                                    Especialistas en experiencias de aventura en
+                                    Granada
+                                </h2>
+                            </div>
+
+                            <div class="text">
+                                <div class="icon-box">
+                                    <i class="flaticon-camping"></i>
+                                </div>
+
+                                <p>
+                                    Somos una empresa dedicada a organizar
+                                    actividades de multiaventura para personas,
+                                    grupos y empresas que buscan algo más que
+                                    turismo convencional. Diseñamos cada
+                                    experiencia con planificación profesional,
+                                    guías cualificados y materiales homologados.
+                                </p>
+                            </div>
+
+                            <ul class="list-style-one clearfix">
+                                <li>
+                                    Guías profesionales con experiencia real en
+                                    montaña.
+                                </li>
+                                <li>
+                                    Equipos revisados y actividades
+                                    planificadas.
+                                </li>
+                                <li>
+                                    Opciones para todos los niveles, sin
+                                    necesidad de experiencia previa.
+                                </li>
+                            </ul>
+
+                            <div class="btn-box">
+                                <a
+                                    href={routes.nosotros}
+                                    class="theme-btn btn-one"
+                                >
+                                    Conocer la empresa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="activities-section sec-pad">
+        <div class="auto-container">
+            <div class="upper-box centred">
+                <div class="sec-title">
+                    <span class="sub-title">Qué ofrecemos</span>
+                    <h2>Nuestras actividades</h2>
+                </div>
+
+                <div class="row clearfix">
+                    <!-- BLOQUE 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 activities-block">
+                        <div class="activities-block-one">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <a href={routes.servicios}>
+                                        <img
+                                            src="assets/images/resource/activities-1.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+
+                                <div class="lower-content">
+                                    <div class="icon-box">
+                                        <div
+                                            class="shape"
+                                            style="background-image: url(assets/images/shape/shape-5.png);"
+                                        >
+                                        </div>
+                                        <div
+                                            class="overlay-shape"
+                                            style="background-image: url(assets/images/shape/shape-6.png);"
+                                        >
+                                        </div>
+                                        <i class="flaticon-climbing"></i>
+                                    </div>
+
+                                    <h3>
+                                        <a href={routes.servicios}>Montañismo</a
+                                        >
+                                    </h3>
+
+                                    <p>
+                                        Rutas guiadas por entornos naturales con
+                                        planificación profesional y medidas de
+                                        seguridad en cada recorrido.
+                                    </p>
+
+                                    <div class="link">
+                                        <a href={routes.servicios}>Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 activities-block">
+                        <div class="activities-block-one">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <a href={routes.servicios}>
+                                        <img
+                                            src="assets/images/resource/activities-2.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+
+                                <div class="lower-content">
+                                    <div class="icon-box">
+                                        <div
+                                            class="shape"
+                                            style="background-image: url(assets/images/shape/shape-5.png);"
+                                        >
+                                        </div>
+                                        <div
+                                            class="overlay-shape"
+                                            style="background-image: url(assets/images/shape/shape-6.png);"
+                                        >
+                                        </div>
+                                        <i class="flaticon-adventurer"></i>
+                                    </div>
+
+                                    <h3>
+                                        <a href={routes.servicios}
+                                            >Rutas en bicicleta</a
+                                        >
+                                    </h3>
+
+                                    <p>
+                                        Recorridos adaptados a distintos niveles
+                                        para disfrutar del paisaje de Granada de
+                                        forma activa y segura.
+                                    </p>
+
+                                    <div class="link">
+                                        <a href={routes.servicios}>Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 activities-block">
+                        <div class="activities-block-one">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <a href={routes.servicios}>
+                                        <img
+                                            src="assets/images/resource/activities-3.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+
+                                <div class="lower-content">
+                                    <div class="icon-box">
+                                        <div
+                                            class="shape"
+                                            style="background-image: url(assets/images/shape/shape-5.png);"
+                                        >
+                                        </div>
+                                        <div
+                                            class="overlay-shape"
+                                            style="background-image: url(assets/images/shape/shape-6.png);"
+                                        >
+                                        </div>
+                                        <i class="flaticon-tent"></i>
+                                    </div>
+
+                                    <h3>
+                                        <a href={routes.servicios}
+                                            >Experiencias multiaventura</a
+                                        >
+                                    </h3>
+
+                                    <p>
+                                        Actividades diseñadas para grupos,
+                                        empresas o particulares que buscan una
+                                        experiencia diferente al aire libre.
+                                    </p>
+
+                                    <div class="link">
+                                        <a href={routes.servicios}>Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOQUE INFERIOR -->
+            <div class="lower-box">
+                <div class="sec-title light">
+                    <span class="sub-title"
+                        >Organiza tu próxima experiencia</span
+                    >
+                    <h3>Aventura con planificación profesional</h3>
+                </div>
+
+                <div class="text">
+                    <p>
+                        Actividades disponibles durante todo el año para
+                        particulares, grupos y empresas.
+                    </p>
+                </div>
+
+                <div class="support-box">
+                    <p>Consulta disponibilidad</p>
+
+                    <h3>
+                        <a href={routes.contacto}> Contactar ahora </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chooseus-section bg-color-1">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!-- IZQUIERDA -->
+                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                    <div class="content-inner">
+                        <div class="image-box">
+                            <div class="row clearfix">
+                                <div
+                                    class="col-lg-6 col-md-6 col-sm-12 image-column"
+                                >
+                                    <figure class="image">
+                                        <img
+                                            src="assets/images/resource/chooseus-1.jpg"
+                                            alt="Actividades guiadas en Granada"
+                                        />
+                                    </figure>
+                                </div>
+
+                                <div
+                                    class="col-lg-6 col-md-6 col-sm-12 image-column"
+                                >
+                                    <figure class="image">
+                                        <img
+                                            src="assets/images/resource/chooseus-2.jpg"
+                                            alt="Experiencias multiaventura seguras"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inner-box">
+                            <div class="sec-title">
+                                <span class="sub-title">Nuestras garantías</span
+                                >
+
+                                <h2>Por qué elegirnos</h2>
+
+                                <p>
+                                    Organizamos cada actividad con criterios
+                                    profesionales, priorizando la seguridad, la
+                                    planificación y la calidad de la
+                                    experiencia.
+                                </p>
+                            </div>
+
+                            <div class="inner">
+                                <ul class="list clearfix">
+                                    <li>
+                                        Guías cualificados con experiencia real.
+                                    </li>
+                                    <li>Material homologado y revisado.</li>
+                                    <li>
+                                        Actividades adaptadas a distintos
+                                        niveles.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DERECHA (CTA) -->
+                <div class="col-lg-4 col-md-12 col-sm-12 inner-column">
+                    <div class="content_block_two">
+                        <div class="content-box">
+                            <div class="upper">
+                                <span>Planifica tu próxima aventura</span>
+
+                                <p>
+                                    Reserva tu actividad con una empresa
+                                    especializada y disfruta de la naturaleza
+                                    con total tranquilidad.
+                                </p>
+
+                                <a
+                                    href={routes.contacto}
+                                    class="theme-btn btn-one"
+                                >
+                                    Reservar ahora
+                                </a>
+                            </div>
+
+                            <figure class="image">
+                                <img
+                                    src="assets/images/resource/chooseus-3.jpg"
+                                    alt="Reserva actividades en Granada"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

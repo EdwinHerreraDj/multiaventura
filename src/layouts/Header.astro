@@ -1,0 +1,98 @@
+---
+import { Image } from "astro:assets";
+import { routes } from "../config/routes";
+import logo from "../assets/images/multiaventura-logo.png";
+---
+
+<header class="main-header header-style-one">
+    <div class="header-lower">
+        <div class="logo-box">
+            <figure class="logo">
+                <a href={routes.home}>
+                    <Image src={logo} alt="Multiaventura Granada" />
+                </a>
+            </figure>
+        </div>
+
+        <div class="outer-box">
+            <div class="menu-area">
+
+                <!-- Mobile toggler -->
+                <div class="mobile-nav-toggler">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </div>
+
+                <nav class="main-menu navbar-expand-md navbar-light">
+                    <div class="collapse navbar-collapse show clearfix">
+                        <ul class="navigation clearfix">
+
+                            <li><a href={routes.home}>Inicio</a></li>
+
+                            <li>
+                                <a href={routes.nosotros}>Nosotros</a>
+                            </li>
+
+                            <li>
+                                <a href={routes.servicios}>Actividades</a>
+                            </li>
+
+                            <li>
+                                <a href={routes.blog}>Blog</a>
+                            </li>
+
+                            <li>
+                                <a href={routes.contacto}>Contacto</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Teléfono (esto sí convierte) -->
+            <div class="menu-right-content">
+                <div class="support-box">
+                    <div class="icon"><i class="flaticon-chat"></i></div>
+                    <span>Reserva o consulta</span>
+                    <h5>
+                        <a href="tel:+34123456789">+34 678 673 654</a>
+                    </h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+   
+</header>
+
+
+<div class="mobile-menu">
+    <div class="menu-backdrop"></div>
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+
+    <nav class="menu-box">
+        <div class="nav-logo">
+            <a href={routes.home}>
+                <img src="assets/images/logo-2.png" alt="Multiaventura Granada"/>
+            </a>
+        </div>
+
+        <div class="menu-outer">
+            <!-- Se clona automáticamente desde el menú principal -->
+        </div>
+
+        <div class="contact-info">
+            <h4>Contacto</h4>
+            <ul>
+                <li>Granada, Andalucía</li>
+                <li><a href="tel:+34123456789">+34 678 673 654</a></li>
+                <li><a href="mailto:info@multiaventura.com">info@multiaventura.com</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
