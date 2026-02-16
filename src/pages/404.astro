@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { routes } from "../config/routes";
+---
+
+<Layout
+  title="Página no encontrada"
+  description="La página que buscas no existe"
+>
+  <section class="page-title centred">
+    <div
+      class="bg-layer"
+      style="background-image: url(assets/images/background/page-title.jpg);"
+    >
+    </div>
+    <div
+      class="pattern-layer"
+      style="background-image: url(assets/images/shape/shape-12.png);"
+    >
+    </div>
+
+    <div class="auto-container">
+      <div class="content-box">
+        <ul class="bread-crumb clearfix">
+          <li>
+            <a href={routes.home}>Inicio</a>
+          </li>
+          <li>Página no encontrada</li>
+        </ul>
+
+        <div class="title">
+          <h1>Página no encontrada</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-partner">
+      <ul class="media-links clearfix">
+        <li><h6>Síguenos</h6></li>
+
+        <li>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="error-section">
+    <div class="auto-container">
+      <div class="content-box">
+        <h1>404</h1>
+        <h2>¡Vaya! La página que buscas no existe.</h2>
+        <p>
+          Lo sentimos, pero la página que estás buscando no se pudo encontrar.
+          Es posible que haya sido eliminada, cambiada de nombre o esté
+          temporalmente no disponible.
+        </p>
+        <a href={routes.home} class="theme-btn btn-style-one"
+          >Volver al inicio</a
+        >
+      </div>
+    </div>
+  </section>
+  
+</Layout>

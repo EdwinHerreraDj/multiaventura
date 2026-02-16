@@ -2,166 +2,174 @@
 import { routes } from "../config/routes.js";
 import { Image } from "astro:assets";
 import logo from "../assets/images/multiaventura-logo.png";
+import logoUE from "../assets/images/financiado/Union_Europea.webp";
+import logoResiliencia from "../assets/images/financiado/Resilencia.webp";
 ---
 
 <footer class="main-footer">
-    <div
-        class="pattern-layer"
-        style="background-image: url(assets/images/shape/shape-13.png);"
-    >
+  <div
+    class="pattern-layer"
+    style="background-image: url(assets/images/shape/shape-13.png);"
+  >
+  </div>
+
+  <div class="auto-container">
+    <!-- TOP -->
+    <div class="footer-top">
+      <div class="top-inner">
+        <div class="text">
+          <h5>Email</h5>
+          <h3>
+            <a href="mailto:info@multiaventuragranada.com">
+              info@multiaventuragranada.com
+            </a>
+          </h3>
+        </div>
+
+        <figure class="footer-logo bg-white">
+          <a href={routes.home}>
+            <Image src={logo} alt="Multiaventura Granada" />
+          </a>
+        </figure>
+
+        <div class="text">
+          <h5>Teléfono</h5>
+          <h3>
+            <a href="tel:+34678673654"> +34 678 673 654 </a>
+          </h3>
+        </div>
+      </div>
     </div>
 
+    <!-- WIDGETS -->
+    <div class="widget-section">
+      <div class="row clearfix">
+        <!-- MENÚ -->
+        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+          <div class="footer-widget links-widget">
+            <div class="widget-title">
+              <h4>Enlaces</h4>
+            </div>
+
+            <div class="widget-content">
+              <ul class="links-list clearfix">
+                <li><a href={routes.home}>Inicio</a></li>
+                <li><a href={routes.nosotros}>Nosotros</a></li>
+                <li>
+                  <a href={routes.servicios}>Actividades</a>
+                </li>
+                <li><a href={routes.blog}>Blog</a></li>
+                <li><a href={routes.contacto}>Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTIVIDADES -->
+        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+          <div class="footer-widget links-widget">
+            <div class="widget-title">
+              <h4>Actividades</h4>
+            </div>
+
+            <div class="widget-content">
+              <ul class="links-list clearfix">
+                <li>
+                  <a href={routes.servicios}>Rutas en bicicleta</a>
+                </li>
+                <li>
+                  <a href={routes.servicios}>Montañismo</a>
+                </li>
+                <li>
+                  <a href={routes.servicios}>Parapente</a>
+                </li>
+                <li>
+                  <a href={routes.servicios}>Paseos en globo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+          <div class="footer-widget contact-widget">
+            <div class="widget-title">
+              <h4>Contacto</h4>
+            </div>
+
+            <div class="widget-content">
+              <p>
+                Granada, Andalucía <br />
+                España
+              </p>
+
+              <ul class="social-links clearfix">
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+          <div class="footer-widget newsletter-widget">
+            <div class="widget-title">
+              <h4>Proyecto financiado</h4>
+            </div>
+
+            <div class="widget-content">
+              <p>
+                Este proyecto ha sido financiado para promover actividades de
+                aventura y turismo sostenible.
+              </p>
+
+              <Image
+                src={logoUE}
+                alt="Financiado por la Unión Europea"
+                class="w-full h-auto mt-4 bg-white p-2 rounded"
+              />
+
+              <Image
+                src={logoResiliencia}
+                alt="Financiado por el programa de Resiliencia"
+                class="w-full h-auto mt-4 bg-white p-2 rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom centred">
     <div class="auto-container">
-        <!-- TOP -->
-        <div class="footer-top">
-            <div class="top-inner">
-                <div class="text">
-                    <h5>Email</h5>
-                    <h3>
-                        <a href="mailto:info@multiaventuragranada.com">
-                            info@multiaventuragranada.com
-                        </a>
-                    </h3>
-                </div>
-
-                <figure class="footer-logo bg-white">
-                    <a href={routes.home}>
-                        <Image
-                            src={logo}
-                            alt="Multiaventura Granada"
-                        />
-                    </a>
-                </figure>
-
-                <div class="text">
-                    <h5>Teléfono</h5>
-                    <h3>
-                        <a href="tel:+34678673654"> +34 678 673 654 </a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- WIDGETS -->
-        <div class="widget-section">
-            <div class="row clearfix">
-                <!-- MENÚ -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                    <div class="footer-widget links-widget">
-                        <div class="widget-title">
-                            <h4>Enlaces</h4>
-                        </div>
-
-                        <div class="widget-content">
-                            <ul class="links-list clearfix">
-                                <li><a href={routes.home}>Inicio</a></li>
-                                <li><a href={routes.nosotros}>Nosotros</a></li>
-                                <li>
-                                    <a href={routes.servicios}>Actividades</a>
-                                </li>
-                                <li><a href={routes.blog}>Blog</a></li>
-                                <li><a href={routes.contacto}>Contacto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ACTIVIDADES -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                    <div class="footer-widget links-widget">
-                        <div class="widget-title">
-                            <h4>Actividades</h4>
-                        </div>
-
-                        <div class="widget-content">
-                            <ul class="links-list clearfix">
-                                <li>
-                                    <a href={routes.servicios}
-                                        >Rutas en bicicleta</a>
-                                </li>
-                                <li>
-                                    <a href={routes.servicios}>Montañismo</a>
-                                </li>
-                                <li>
-                                    <a href={routes.servicios}>Parapente</a>
-                                </li>
-                                <li>
-                                    <a href={routes.servicios}
-                                        >Paseos en globo</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CONTACTO -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                    <div class="footer-widget contact-widget">
-                        <div class="widget-title">
-                            <h4>Contacto</h4>
-                        </div>
-
-                        <div class="widget-content">
-                            <p>
-                                Granada, Andalucía <br />
-                                España
-                            </p>
-
-                            <ul class="social-links clearfix">
-                                <li>
-                                    <a href="#"
-                                        ><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        ><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CTA -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                    <div class="footer-widget newsletter-widget">
-                        <div class="widget-title">
-                            <h4>Reserva tu experiencia</h4>
-                        </div>
-
-                        <div class="widget-content">
-                            <p>
-                                Consulta disponibilidad y organiza tu próxima
-                                aventura con guías profesionales.
-                            </p>
-
-                            <a href={routes.contacto} class="theme-btn btn-one">
-                                Contactar ahora
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="copyright">
+        <p>
+          &copy; <span id="current-year"></span> Multiaventura Granada. Todos los
+          derechos reservados.
+        </p>
+      </div>
     </div>
-
-    <!-- BOTTOM -->
-    <div class="footer-bottom centred">
-        <div class="auto-container">
-            <div class="copyright">
-                <p>
-                    &copy; <span id="current-year"></span> Multiaventura Granada.
-                    Todos los derechos reservados.
-                </p>
-            </div>
-        </div>
-    </div>
+  </div>
 </footer>
 
-<script>
-    // Actualiza el año automáticamente
-    const year = document.getElementById("current-year") as HTMLElement | null;
+<!-- scroll to top -->
+<button class="scroll-top scroll-to-target" data-target="html">
+  <i class="fal fa-long-arrow-up"></i>
+</button>
 
-    if (year) {
-        year.textContent = new Date().getFullYear().toString();
-    }
+<script>
+  // Actualiza el año automáticamente
+  const year = document.getElementById("current-year") as HTMLElement | null;
+
+  if (year) {
+    year.textContent = new Date().getFullYear().toString();
+  }
 </script>

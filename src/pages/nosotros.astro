@@ -1,0 +1,223 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { routes } from "../config/routes";
+import { Image } from "astro:assets";
+---
+
+<Layout
+  title="Nosotros"
+  description="Conoce más sobre Multiaventura Granada"
+  description="Descubre quiénes somos, nuestra misión y visión en Multiaventura Granada. Conoce al equipo detrás de las aventuras y cómo nos comprometemos a ofrecer experiencias inolvidables en la naturaleza."
+>
+  <section class="page-title centred">
+    <div
+      class="bg-layer"
+      style="background-image: url(assets/images/background/banner-about-1.jpg);"
+    >
+    </div>
+    <div
+      class="pattern-layer"
+      style="background-image: url(assets/images/shape/shape-12.png);"
+    >
+    </div>
+
+    <div class="auto-container">
+      <div class="content-box">
+        <ul class="bread-crumb clearfix">
+          <li>
+            <a href={routes.home}>Inicio</a>
+          </li>
+          <li>Nosotros</li>
+        </ul>
+
+        <div class="title">
+          <h1>Quiénes somos</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-partner">
+      <ul class="media-links clearfix">
+        <li><h6>Síguenos</h6></li>
+
+        <li>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="auto-container">
+      <div class="row clearfix">
+        <!-- Content Column -->
+        <div class="content-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <div class="sec-title">
+              <h5>Sobre Nosotros</h5>
+              <h2>
+                Multiaventura Granada: Tu puerta a la aventura en la naturaleza
+              </h2>
+            </div>
+            <div class="text">
+              <p>
+                En Multiaventura Granada, somos apasionados por la naturaleza y
+                la aventura. Fundada en 2010, nuestra empresa se ha dedicado a
+                ofrecer experiencias inolvidables en los paisajes más
+                impresionantes de Granada. Desde emocionantes rutas de
+                senderismo hasta actividades acuáticas, nuestro equipo de
+                expertos está comprometido a brindarte momentos únicos y seguros
+                en cada aventura.
+              </p>
+              <p>
+                Nuestra misión es conectar a las personas con la belleza natural
+                de Granada, fomentando el respeto por el medio ambiente y
+                promoviendo un estilo de vida activo. Con una amplia gama de
+                actividades para todas las edades y niveles de experiencia,
+                Multiaventura Granada es tu compañero ideal para explorar la
+                naturaleza y crear recuerdos duraderos.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href={routes.servicios} class="theme-btn btn-style-one"
+                >Descubre nuestras actividades</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <figure class="image-1">
+              <img
+                src="/assets/images/resource/about-1.jpg"
+                alt="Sobre Nosotros"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-style-two about-page">
+    <div
+      class="bg-layer"
+      style="background-image: url(assets/images/background/testimonial-bg.jpg);"
+    >
+    </div>
+
+    <div class="auto-container">
+      <div class="row clearfix">
+        <div class="col-lg-4 col-md-12 col-sm-12 title-column">
+          <div class="sec-title">
+            <span class="sub-title">Opiniones reales</span>
+            <h2>Lo que dicen nuestros clientes</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
+          <div class="inner-content">
+            <div class="two-item-carousel owl-carousel owl-theme owl-nav-none">
+              <!-- TESTIMONIO 1 -->
+              <div class="testimonial-content">
+                <div class="text">
+                  <p>
+                    La organización fue impecable desde el primer momento. Los
+                    guías transmiten mucha seguridad y hacen que la experiencia
+                    sea aún mejor. Totalmente recomendable.
+                  </p>
+                </div>
+                <div class="author-box">
+                  <span class="name">Carlos M.</span>
+                  <span class="designation">Ruta en bicicleta</span>
+                </div>
+              </div>
+
+              <!-- TESTIMONIO 2 -->
+              <div class="testimonial-content">
+                <div class="text">
+                  <p>
+                    Era nuestra primera vez haciendo parapente y el equipo nos
+                    dio muchísima confianza. Todo estuvo muy bien organizado y
+                    repetiremos sin duda.
+                  </p>
+                </div>
+                <div class="author-box">
+                  <span class="name">Laura G.</span>
+                  <span class="designation">Experiencia en parapente</span>
+                </div>
+              </div>
+
+              <!-- TESTIMONIO 3 -->
+              <div class="testimonial-content">
+                <div class="text">
+                  <p>
+                    Contratamos la actividad para un grupo de empresa y superó
+                    las expectativas. Profesionalidad, puntualidad y trato
+                    excelente.
+                  </p>
+                </div>
+                <div class="author-box">
+                  <span class="name">Miguel R.</span>
+                  <span class="designation">Actividad para empresa</span>
+                </div>
+              </div>
+
+              <!-- TESTIMONIO 4 -->
+              <div class="testimonial-content">
+                <div class="text">
+                  <p>
+                    Una experiencia muy bien planificada. Se nota que trabajan
+                    con seguridad y conocen perfectamente la zona.
+                  </p>
+                </div>
+                <div class="author-box">
+                  <span class="name">Andrea P.</span>
+                  <span class="designation">Salida de montañismo</span>
+                </div>
+              </div>
+
+              <!-- TESTIMONIO 5 -->
+              <div class="testimonial-content">
+                <div class="text">
+                  <p>
+                    Regalar esta experiencia fue un acierto. El equipo estuvo
+                    atento en todo momento y la actividad fue espectacular.
+                  </p>
+                </div>
+                <div class="author-box">
+                  <span class="name">David S.</span>
+                  <span class="designation">Bono regalo</span>
+                </div>
+              </div>
+
+              <!-- TESTIMONIO 6 -->
+              <div class="testimonial-content">
+                <div class="text">
+                  <p>
+                    Muy buena comunicación antes de la actividad y una ejecución
+                    perfecta. Da tranquilidad trabajar con profesionales así.
+                  </p>
+                </div>
+                <div class="author-box">
+                  <span class="name">Elena T.</span>
+                  <span class="designation">Cliente particular</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
